@@ -1,0 +1,15 @@
+{
+    "name": "Doctor On Call",
+    "short_name": "Doctor On Call",
+    "icons": [
+        {
+            "src": "/media/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#adf0ed",
+    "start_url": "./",
+    "background_color": "#adf0ed",
+    "display": "standalone"
+}

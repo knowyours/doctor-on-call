@@ -1,0 +1,366 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("../media/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position-y:-15px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+.hide
+{
+    display: none;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 20, 19);
+    height:180px;
+    flex-wrap: wrap;
+    color:rgb(209, 208, 208);    
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    padding: 30px 0 5px 0;
+    font-size:36px;
+    color: rgb(199, 195, 195);
+}
+
+header img{
+    height: 60px;
+    text-align: right;
+}
+
+#menu
+{
+    display: flex;
+    flex-grow: inherit;
+    flex-wrap: wrap;
+}
+
+.menus{
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    border:2px solid white;
+    padding: 8px 18px;
+}
+
+.menus{
+    text-decoration: none;
+    transition: 0.25s;
+    color:white;
+    box-shadow: white 0px 0px 8px;
+}
+
+.menus:hover{
+    background-color: white;
+    color: black;
+    transition: 0.25s;
+}
+
+#content
+{
+    height:440px; 
+    display: flex;
+    font-family: 'Baloo Thambi 2', cursive;
+
+}
+
+#content ul{
+
+    margin-left: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+
+#content h3
+{
+    margin: 0 40px;
+    font-size: 24px;
+}
+
+#content h2{
+    margin:10px 40px;
+    font-style: italic;
+}
+
+#content h1{
+    font-size:60px;
+    
+    margin: 0 0 10px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+#right_opti
+{
+    display: none;
+}
+
+
+#left{
+    
+    margin-left:40px;
+    width: 2000px;
+    padding-top: 50px;
+}
+
+#left li{
+    margin: 10px 0;
+}
+
+#left li a{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 10px;
+    color: black;
+    background-color: rgb(199, 195, 195);
+    border:2px solid gray;
+    box-shadow: gray 0 0 8px;
+    border-radius: 10px 0 10px 0;
+    transition: 0.25s;
+}
+
+#left li a:hover{
+    box-shadow: gray 0 0 16px;
+    transition: 0.25s;
+    background-color: rgb(170, 159, 159);}
+
+.right{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+
+    
+}
+
+
+.right blockquote{
+    margin: 70px 100px 0px 300px ;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(56, 49, 49);
+}
+
+
+
+footer
+{
+    background-color: black;
+    font-family: 'Muli', sans-serif;
+    height: 87px;
+    color: rgb(240, 194, 240);
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* @media Rules for Mobile Optimization */
+
+
+  @media screen and (max-width:1185px)
+{
+    #right_norm{
+        display: none;
+    }
+    #right_opti{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1010px)
+{
+    .menus{
+        font-size:16px;
+    }
+
+    header h1
+    {
+        font-size:26px;
+    }
+    header nav{
+        position: relative;
+        top:-24px;
+        justify-content: center;
+    }
+    header{
+        height: 210px;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:703px)
+{
+
+
+    .right blockquote{
+        margin:0 30px 0 30px ;
+    }
+
+    body{
+        background-position-y: 100px;
+        
+    }
+
+    .menus{
+        font-size:12px;
+        margin:5px 10px;
+    }
+
+    header h1
+    {
+        font-size:24px;
+        
+    }
+
+    header nav{
+        position: relative;
+        top:-24px;
+        justify-content: center;
+    }
+
+     
+}
+
+@media screen and (max-width:509px)
+{
+    header
+    {
+        height: 180px;
+    }
+    body{
+        background-position-x:-400px;
+        background-position-y:90px;
+
+    }
+
+    #right_opti blockquote{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:463px)
+{
+    header
+    {
+        height: 180px;
+    }
+    body{
+        background-position-x:-400px;
+        background-position-y:90px;
+
+    }
+}
+
+
+@media screen and (max-width:375px)
+{
+    header
+    {
+        height: 180px;
+    }
+    body{
+        background-position-x:-400px;
+        background-position-y:90px;
+
+    }
+}
+
+@media screen and (max-width:300px)
+{
+    .right blockquote{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:260px)
+{
+    .right blockquote{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:488px)
+{
+    .menus{
+        font-size:16px;
+    }
+
+    header h1
+    {
+        font-size:26px;
+        
+    }
+
+    header nav{
+        position: relative;
+        top:-24px;
+        justify-content: center;
+    }
+
+    header{
+        height: 260px;
+    }
+    footer
+    {
+        height: 65px;
+    }
+
+     
+}
+
+@media screen and (max-width:406px)
+{
+    header
+    {
+        height: 290px;
+    }
+    footer
+    {
+        height: 65px;
+    }
+}
+
+@media screen and (max-width:382px)
+{
+    header
+    {
+        height: 420px;
+    }
+
+    footer
+    {
+        height: 70px;
+    }
+}
